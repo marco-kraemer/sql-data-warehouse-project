@@ -32,7 +32,7 @@ CREATE TABLE bronze.crm_cust_info (
     cst_key             NVARCHAR(50),
     cst_firstname       NVARCHAR(50),
     cst_lastname        NVARCHAR(50),
-    cst_material_status NVARCHAR(50),
+    cst_maritial_status NVARCHAR(50),
     cst_gndr            NVARCHAR(50),
     cst_create_date     DATE
 );
@@ -40,11 +40,11 @@ CREATE TABLE bronze.crm_cust_info (
 IF OBJECT_ID ('bronze.crm_prd_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_prd_info;
 CREATE TABLE bronze.crm_prd_info (
-    prd_id      INT,
-    prd_key     NVARCHAR(50),
-    prd_nm      NVARCHAR(50),
-    prd_cis     INT,
-    prd_line    NVARCHAR(50),
+    prd_id       INT,
+    prd_key      NVARCHAR(50),
+    prd_nm       NVARCHAR(50),
+    prd_cost     INT,
+    prd_line     NVARCHAR(50),
     prd_start_dt DATETIME,
     prd_end_dt   DATETIME
 );
@@ -75,7 +75,7 @@ IF OBJECT_ID ('bronze.erp_loc_a101', 'U') IS NOT NULL
     DROP TABLE bronze.erp_loc_a101;
 CREATE TABLE bronze.erp_loc_a101 (
     cid      NVARCHAR(50),
-    centry   NVARCHAR(50)
+    cntry   NVARCHAR(50)
 );
 
 IF OBJECT_ID ('bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
