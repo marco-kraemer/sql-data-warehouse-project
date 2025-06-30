@@ -140,4 +140,3 @@ This structure supports BI tools and high-performance analytical queries.
 - Add snapshot tables to gold layer for historical analysis
 - Schedule ETL via SQL Agent
 - Add monitoring and logging for data quality checks
-
