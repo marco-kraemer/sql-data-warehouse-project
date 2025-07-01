@@ -60,7 +60,7 @@ SELECT
 	ROW_NUMBER() OVER (ORDER BY pn.prd_start_dt, pn.prd_key) AS product_key,  -- surrogate key
 	pn.prd_id as product_id,
 	pn.prd_key as product_number,
-	pn.prd_nm as procut_name,
+	pn.prd_nm as product_name,
 	pn.cat_id as category_id,
 	pc.cat category,  -- category name from ERP
 	pc.subcat as subcategory,
